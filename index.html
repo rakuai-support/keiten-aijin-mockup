@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>敬天愛人フォーラム21 - モックアップ</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.7;
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            line-height: 1.3;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://static.wixstatic.com/media/b9781e_f1d1a1a899ec4dd4892f13d7f2f3d736~mv2.jpg/v1/fill/w_1200,h_500,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/721cd8_d1fd7a5137064c73b690ee47b3995440~mv2(1).jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 8rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1, .hero p {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: #0d6efd;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .card-icon {
+            font-size: 3.5rem;
+            text-align: center;
+            display: block;
+            margin-bottom: 1rem;
+            color: #0d6efd;
+        }
+        .news-list-item {
+            border-bottom: 1px solid #eee;
+            padding: 1.2rem 0;
+        }
+        .news-list-item:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+        .footer a {
+            color: #adb5bd;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダーとナビゲーション -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">敬天愛人フォーラム21</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">フォーラムについて</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="saigo.html">西郷隆盛のすべて</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="history.html">明治の歴史と人物</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="activity.html">活動記録</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-2" href="about.html#membership">会員募集</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインビジュアル（ヒーローセクション） -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4">西郷隆盛の志を、現代へ。</h1>
+            <p class="lead">道は天地自然の物にして、人はこれを行うものなれば、天を敬するを目的とす。</p>
+            <a href="about.html#philosophy" class="btn btn-lg btn-light mt-3">「敬天愛人」の教えとは</a>
+        </div>
+    </header>
+
+    <!-- コンテンツセクション -->
+    <main class="container my-5">
+
+        <!-- 「敬天愛人フォーラム21」について -->
+        <section id="about" class="py-5">
+            <h2 class="section-title">敬天愛人フォーラム21について</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <p class="lead">私たちは、西郷隆盛が目指した道徳・道義に基づいた「敬天愛人」の教えを実践し、後世に伝えることを目的とする団体です。</p>
+                    <p>日本の歴史と文化を深く学び、日本人としてのアイデンティティーを持って、世界の恒久平和に貢献することを目指しています。上野公園の清掃活動や生誕祭の開催など、様々な活動を行っています。</p>
+                    <a href="about.html" class="btn btn-outline-primary mt-3">フォーラムの詳細を見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 主要コンテンツへの導線 -->
+        <section id="saigo" class="py-5 bg-light">
+             <h2 class="section-title">西郷隆盛を知る</h2>
+             <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="card-icon">📜</span>
+                            <h5 class="card-title">南洲翁遺訓</h5>
+                            <p class="card-text">西郷隆盛の思想の真髄が込められた遺訓の全文と、その深い意味を解説します。</p>
+                            <a href="ikun.html" class="btn btn-primary">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="card-icon">📖</span>
+                            <h5 class="card-title">生涯と功績</h5>
+                            <p class="card-text">波乱に満ちた生涯と、廃藩置県や学制発布など近代日本の礎を築いた功績を辿ります。</p>
+                            <a href="life.html" class="btn btn-primary">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <span class="card-icon">🗣️</span>
+                            <h5 class="card-title">人物像と逸話</h5>
+                            <p class="card-text">その清廉で懐の深い人柄を伝える逸話の数々を紹介します。</p>
+                            <a href="anecdotes.html" class="btn btn-primary">詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section id="news" class="py-5">
+            <h2 class="section-title">お知らせ</h2>
+            <div class="col-md-8 mx-auto">
+                <ul class="list-unstyled">
+                    <li class="news-list-item">
+                        <span class="text-muted">2025.07.20</span>
+                        <a href="#" class="text-decoration-none text-dark d-block">次回の西郷隆盛銅像前清掃活動は8月10日（日）に開催します。</a>
+                    </li>
+                    <li class="news-list-item">
+                        <span class="text-muted">2025.06.15</span>
+                        <a href="#" class="text-decoration-none text-dark d-block">西郷隆盛生誕198年祭の記録を掲載しました。</a>
+                    </li>
+                    <li class="news-list-item">
+                        <span class="text-muted">2025.05.01</span>
+                        <a href="#" class="text-decoration-none text-dark d-block">ウェブサイトをリニューアルしました。</a>
+                    </li>
+                </ul>
+                <div class="text-center mt-4">
+                     <a href="activity.html" class="btn btn-outline-primary">お知らせ一覧へ</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>敬天愛人フォーラム21</h5>
+                    <p class="text-muted">西郷隆盛会館<br>
+                        〒101-0047<br>
+                        東京都千代田区内神田3-22-6・4階<br>
+                        TEL/FAX 03-3252-3153
+                    </p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>サイトマップ</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">ホーム</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">フォーラムについて</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">西郷隆盛のすべて</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">明治の歴史と人物</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">活動記録</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                     <h5>関連リンク</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-muted">会員募集のご案内</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">お問い合わせ</a></li>
+                        <li><a href="#" class="text-decoration-none text-muted">プライバシーポリシー</a></li>
+                        <li><a href="https://www.tiktok.com/@keiten_aijin" class="text-decoration-none text-muted" target="_blank">TikTok</a></li>
+                    </ul>
+                </div>
+                 <div class="col-md-3 mb-3">
+                    <h5>ご支援のお願い</h5>
+                    <p class="text-muted">私たちの活動は皆様のご支援によって支えられています。</p>
+                     <a href="#" class="btn btn-success">BTCでのご寄付はこちら</a>
+                </div>
+            </div>
+            <div class="text-center text-muted mt-4 border-top pt-3">
+                <p>&copy; 2025 敬天愛人フォーラム21. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
